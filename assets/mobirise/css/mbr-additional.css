@@ -1202,6 +1202,8 @@ a {
   text-align: center;
 }
 .cid-tl7qlNC6xu {
+  padding-top: 8rem;
+  padding-bottom: 7rem;
   background-image: url("../../../assets/images/bg2.jpeg");
 }
 .cid-tl7qlNC6xu .mbr-fallback-image.disabled {
@@ -1380,7 +1382,6 @@ a {
   .cid-tl4R3G39Vz .text-wrapper {
     padding: 0 5.5rem;
     margin-bottom: 3rem;
-    padding: 0 4rem;
   }
 }
 @media (max-width: 768px) {
