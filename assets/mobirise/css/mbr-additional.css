@@ -1436,7 +1436,7 @@ a {
 }
 .cid-taTOj7vclx {
   padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-bottom: 5rem;
   background: #f6f9ff;
 }
 .cid-taTOj7vclx .row {
@@ -1517,16 +1517,16 @@ a {
   align-items: center;
 }
 .cid-taTOj7vclx P {
-  color: #003566;
+  color: #cca000;
 }
 .cid-taTI8VqgC4 {
   background: #f6f9ff;
-  padding-top: 0px;
-  padding-bottom: 0px;
 }
 .cid-taTI8VqgC4 .image-block {
   position: relative;
   margin: auto;
+  width: 100% !important;
+  max-width: 500px;
 }
 .cid-taTI8VqgC4 .image-block img {
   width: 100%;
