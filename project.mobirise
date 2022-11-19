@@ -72,7 +72,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 284,
+    "uniqCompNum": 295,
     "versionPublish": "5.6.13",
     "screenshot": "screenshot.png",
     "favicon": "@PROJECT_PATH@/assets/images/png-02-128x101.png",
@@ -997,6 +997,194 @@
           "_params": {}
         },
         {
+          "_name": "slider5",
+          "_sourceTheme": "wellnessm5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"slider5\" group=\"Sliders &amp; Galleries\" mbr-class=\"{'mbr-fullscreen': fullScreen}\">\n\n\t<mbr-parameters>\n\t\t<input type=\"id\" name=\"sliderId\">\n\t\t<header>Size</header>\n\t\t<input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\">\n\t\t<input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\" checked=\"\">\n\t\t<input type=\"range\" inline=\"\" title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline=\"\" title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"0\" condition=\"fullScreen == false\">\n\t\t<header>Carousel</header>\n\t\t<input type=\"checkbox\" title=\"Autoplay\" name=\"autoplay\" checked=\"\">\n\t\t<input type=\"range\" title=\"Interval\" name=\"interval\" min=\"3\" max=\"10\" value=\"4\" step=\"1\" condition=\"autoplay\">\n\t\t<header>Slide</header>\n\t\t<input type=\"checkbox\" title=\"Caption\" name=\"showCaption\">\n\t\t<input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked=\"\" condition=\"showCaption\">\n\t\t<input type=\"checkbox\" name=\"arrows\" title=\"Arrows\" checked=\"\">\n        <input type=\"checkbox\" name=\"arrowsMobile\" title=\"Mobile Arrows\" condition=\"arrows\" checked=\"\">\n        <input type=\"color\" title=\"Arrows Color\" name=\"arrowsColor\" value=\"#ffffff\" condition=\"arrows\">\n\t\t<header condition=\"showLink &amp;&amp; showCaption\">Link</header>\n\t\t<input type=\"checkbox\" title=\"Link\" name=\"showLink\" checked=\"\" condition=\"showCaption\">\n\t\t<input type=\"color\" title=\"Border\" name=\"borderColor\" value=\"#9a948d\" condition=\"showLink &amp;&amp; showCaption\">\n\t\t<input type=\"color\" title=\"Animation\" name=\"animationColor\" value=\"#ffffff\" condition=\"showLink &amp;&amp; showCaption\">\n\t\t<header>Images</header>\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" checked=\"\">\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#123979\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<input type=\"range\" inline=\"\" title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.3\" condition=\"overlay &amp;&amp; bg.type !== 'color'\">\n\t\t<header>Background</header>\n\t\t<input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#000000\" selected=\"\">\n\t</mbr-parameters>\n\n\t<div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n\t\t<div id=\"{{sliderId}}\" class=\"carousel slide\" mbr-class=\"{'carousel-fade': fade}\" data-ride=\"{{autoplay ? 'carousel' : false}}\" data-bs-ride=\"{{autoplay ? 'carousel' : false}}\" data-interval=\"{{interval*1000}}\" data-bs-interval=\"{{interval*1000}}\">\n\t\t\t<div class=\"carousel-inner\">\n\t\t\t\t<div class=\"carousel-item slider-image item active\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index1-1080x607.jpeg\" alt=\"\" data-slide-to=\"0\" data-bs-slide-to=\"0\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"link text-white\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index2-1080x607.jpg\" alt=\"\" data-slide-to=\"1\" data-bs-slide-to=\"1\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE\n\t\t\t\t\t\t\t\t\t\tTO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center mbr-section-btn\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index4-1080x680.jpg\" alt=\"\" data-slide-to=\"2\" data-bs-slide-to=\"2\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index3-1080x701.jpg\" alt=\"\" data-slide-to=\"3\" data-bs-slide-to=\"3\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index9-768x1024.jpg\" alt=\"\" data-slide-to=\"4\" data-bs-slide-to=\"4\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index6-808x455.jpg\" alt=\"\" data-slide-to=\"5\" data-bs-slide-to=\"5\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index5-808x1080.jpg\" alt=\"\" data-slide-to=\"6\" data-bs-slide-to=\"6\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index8-808x589.jpg\" alt=\"\" data-slide-to=\"7\" data-bs-slide-to=\"7\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div><div class=\"carousel-item slider-image item\">\n\t\t\t\t\t<div class=\"item-wrapper\">\n\t\t\t\t\t\t<div class=\"mbr-overlay\" mbr-if=\"overlay\" mbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t\t\t\t\t\t</div>\n\t\t\t\t\t\t<img class=\"d-block w-100\" src=\"@PROJECT_PATH@/assets/images/index10-768x1027.jpg\" alt=\"\" data-slide-to=\"8\" data-bs-slide-to=\"8\">\n\t\t\t\t\t\t<div class=\"carousel-caption justify-content-center\" mbr-if=\"showCaption\">\n\t\t\t\t\t\t\t<div class=\"row justify-content-center w-100\">\n\t\t\t\t\t\t\t\t<div class=\"col-12 col-md-7 wrap\">\n\t\t\t\t\t\t\t\t\t<h1 class=\"mbr-section-title mbr-fonts-style mbr-white w-100\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\">GIVE YOURSELF PLEASURE AND CLOSE TO PEOPLE</h1>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t\t<div class=\"div\" mbr-if=\"showLink\">\n\t\t\t\t\t\t\t\t\t<p class=\"mbr-text mbr-fonts-style btnHeader d-flex align-items-center\" mbr-theme-style=\"display-4\">\n\t\t\t\t\t\t\t\t\t\t<a href=\"#\" class=\"text-white link\" data-app-selector=\".link\">\n\t\t\t\t\t\t\t\t\t\t\tView demo\n\t\t\t\t\t\t\t\t\t\t</a>\n\t\t\t\t\t\t\t\t\t</p>\n\t\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t\t</div>\n\t\t\t\t\t\t</div>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<a class=\"carousel-control carousel-control-prev\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"prev\" data-bs-slide=\"prev\">\n\t\t\t\t<span class=\"mbri-left\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden\">Previous</span>\n\t\t\t</a>\n\t\t\t<a class=\"carousel-control carousel-control-next\" href=\"#{{sliderId}}\" role=\"button\" data-slide=\"next\" data-bs-slide=\"next\">\n\t\t\t\t<span class=\"mbri-right\" aria-hidden=\"true\"></span>\n\t\t\t\t<span class=\"sr-only visually-hidden\">Next</span>\n\t\t\t</a>\n\t\t</div>\n\t</div>\n</section>",
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            ".carousel": {
+              "@media (min-width: 992px)": {
+                "height": "940px"
+              },
+              "@media (max-width: 768px)": {
+                "height": "400px"
+              },
+              "img": {
+                "width": "100%",
+                "height": "100%",
+                "-o-object-fit": "cover",
+                "object-fit": "cover"
+              },
+              ".carousel-item, .carousel-inner": {
+                "height": "100%"
+              },
+              "overflow": "hidden"
+            },
+            "background-color": "@bgColor",
+            ".carousel-caption": {
+              "top": "50%",
+              "right": "0",
+              "bottom": "auto",
+              "left": "0",
+              "display": "-webkit-flex",
+              "align-items": "center",
+              "transform": "translateY(-50%)",
+              "-webkit-align-items": "center"
+            },
+            ".mobi-mbri-arrow-next": {
+              "margin-left": "5px"
+            },
+            ".mobi-mbri-arrow-prev": {
+              "margin-right": "5px"
+            },
+            ".carousel-control:hover": {
+              "color": "#fff",
+              "opacity": "1"
+            },
+            ".item-wrapper": {
+              "position": "relative",
+              "text-align": "start",
+              "width": "100%"
+            },
+            "@media (max-width: 767px)": {
+              ".container .carousel-control": {
+                "margin-bottom": "0"
+              },
+              ".content-slider-wrap": {
+                "width": "100% !important"
+              }
+            },
+            ".row": {
+              "position": "relative"
+            },
+            ".container": {
+              "margin-bottom": "3px"
+            },
+            ".carousel-control": {
+              "color": "@arrowsColor",
+              "top": "50%",
+              "width": "100px",
+              "height": "60px",
+              "margin-top": "-1.5rem",
+              "font-size": "40px",
+              "border-radius": "50%",
+              "transition": "all 0.3s",
+              "opacity": ".8",
+              "& when not (@arrows)": {
+                ".mbri-left, .mbri-right": {
+                  "display": "none"
+                }
+              },
+              "& when not (@arrowsMobile)": {
+                "@media (max-width: 768px)": {
+                  ".mbri-left, .mbri-right": {
+                    "display": "none"
+                  }
+                }
+              },
+              "&.carousel-control-prev": {
+                "left": "0",
+                "margin-left": "2.5rem"
+              },
+              "&.carousel-control-next": {
+                "right": "0",
+                "margin-right": "2.5rem"
+              },
+              "@media (max-width: 767px)": {
+                "top": "70%",
+                "&.carousel-control-prev": {
+                  "margin-left": ".5rem"
+                },
+                "&.carousel-control-next": {
+                  "margin-right": ".5rem"
+                }
+              }
+            },
+            ".buttons-wrap": {
+              "justify-content": "start"
+            },
+            ".container-fluid": {
+              "padding-left": "0",
+              "padding-right": "0"
+            },
+            "@media (max-width: 768px)": {
+              ".carousel-caption": {
+                "padding-left": "15px",
+                "padding-right": "15px"
+              },
+              ".buttons-wrap": {
+                "flex-wrap": "wrap",
+                "flex-direction": "column",
+                ".mbr-section-btn": {
+                  "margin-bottom": "10px"
+                }
+              }
+            },
+            ".mbr-section-title": {
+              "text-align": "center",
+              "color": "#ffffff"
+            },
+            ".wrap": {
+              "z-index": "9999"
+            },
+            ".btnHeader": {
+              "position": "absolute",
+              "width": "140px",
+              "height": "140px",
+              "border-radius": "50%",
+              "cursor": "pointer",
+              "left": "50%",
+              "top": "70%",
+              "border": "1px solid @borderColor",
+              "justify-content": "center",
+              "transition": "border 0.5s ease",
+              "transform": "translateX(-50%)",
+              "@media (max-width: 991px)": {},
+              "&::before, &::after": {
+                "content": "''",
+                "width": "102%",
+                "height": "102%",
+                "position": "absolute",
+                "border-radius": "50%",
+                "top": "-1px",
+                "left": "-1%"
+              },
+              "&::before": {
+                "border": "1px solid transparent",
+                "transition": "border-top-color 0.1s linear, border-right-color 0.1s linear 0.1s, border-bottom-color 0.1s linear 0.2s"
+              },
+              "&:hover::before": {
+                "border-top-color": "@animationColor",
+                "border-right-color": "@animationColor",
+                "border-bottom-color": "@animationColor"
+              },
+              "&::after": {
+                "border": "0 solid transparent",
+                "transition": "transform 0.2s linear 0s, border-left-width 0s linear 0.3s"
+              },
+              "&:hover::after": {
+                "border-top": "1px solid @animationColor",
+                "border-left-color": "@animationColor",
+                "border-left-width": "1px",
+                "bordersborder-right-width": "1px",
+                "borderstransform": "rotate(270deg)"
+              }
+            },
+            ".img": {
+              "position": "relative"
+            }
+          },
+          "_cid": "tnFvE1IE3x",
+          "_anchor": "slider5-86",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
           "alias": false,
           "_styles": {
             "padding-top": "(@paddingTop * 1rem)",
@@ -1410,7 +1598,7 @@
               "color": "#cca000"
             }
           },
-          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contact2\" group=\"Contact\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <header>Map</header>\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.311227739835!2d39.040555600000005!3d22.827972199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858efee98fb6e760!2zMjLCsDQ5JzQwLjciTiAzOcKwMDInMjYuMCJF!5e0!3m2!1sen!2s!4v1668888590127!5m2!1sen!2s&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\" value=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.311227739835!2d39.040555600000005!3d22.827972199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858efee98fb6e760!2zMjLCsDQ5JzQwLjciTiAzOcKwMDInMjYuMCJF!5e0!3m2!1sen!2s!4v1668888590127!5m2!1sen!2s&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pic-pp-1748x1240.jpeg\">\n            <input type=\"color\" title=\"Color\" value=\"#f6f9ff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>تواصل معنا</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                SUBTITLE\n            </h4>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"card-container\">\n                    <div class=\"card-wrapper\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-phone mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\"><b>&nbsp; رقم الهاتف</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"tel:+966552018443\" class=\"text-warning\"><b>552018443 (966+)</b></a></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 1\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; البريد الإلكتروني</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\"><b>sdm13445@gmail.com<br>info@brightlook-company.com</b></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 2\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-globe mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; العنوان</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><b><a href=\"https://goo.gl/maps/tLZ9HBwD7Rm8tzi89\" class=\"text-warning\">رابغ حي صفا شارع مرور</a></b><br></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 3\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-whatsapp socicon\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; واتساب</b>\n                            </h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"https://wa.me/966552018443\" class=\"text-warning text-primary\">إبداء المحادثة</a></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <div class=\"image-wrapper\">\n                            <img stype=\"width:70%\" src=\"@PROJECT_PATH@/assets/images/mbr-favicon.png\" alt>                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"map-wrapper col-12 col-md-6\">\n                <div class=\"google-map\" mbr-map=\"googleMap\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"contact2\" group=\"Contact\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"checkbox\" title=\"Reverse\" name=\"reverse\" checked>\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\">\n        <input type=\"checkbox\" title=\"Card Title\" name=\"showCardTitle\" checked>\n        <select title=\"Cards\" name=\"cardsAmount\">\n            <option value=\"1\">1</option>\n            <option value=\"2\">2</option>\n            <option value=\"3\">3</option>\n            <option value=\"4\" selected>4</option>\n        </select>\n        <header>Map</header>\n        <input type=\"map\" title=\"Map\" name=\"googleMap\" place-id=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.311227739835!2d39.040555600000005!3d22.827972199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858efee98fb6e760!2zMjLCsDQ5JzQwLjciTiAzOcKwMDInMjYuMCJF!5e0!3m2!1sen!2s!4v1668888590127!5m2!1sen!2s&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\" value=\"<iframe src=&quot;https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3677.311227739835!2d39.040555600000005!3d22.827972199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x858efee98fb6e760!2zMjLCsDQ5JzQwLjciTiAzOcKwMDInMjYuMCJF!5e0!3m2!1sen!2s!4v1668888590127!5m2!1sen!2s&quot; width=&quot;600&quot; height=&quot;450&quot; style=&quot;border:0;&quot; allowfullscreen=&quot;&quot; loading=&quot;lazy&quot; referrerpolicy=&quot;no-referrer-when-downgrade&quot;></iframe>\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\">\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/pic-pp-1748x1240.jpeg\">\n            <input type=\"color\" title=\"Color\" value=\"#f6f9ff\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.6\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"mbr-section-head\" mbr-if=\"showTitle || showSubtitle\">\n            <h3 class=\"mbr-section-title mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>تواصل معنا</b></h3>\n            <h4 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\">\n                SUBTITLE\n            </h4>\n        </div>\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-6\">\n                <div class=\"card-container\">\n                    <div class=\"card-wrapper\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-phone mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\"><b>&nbsp; رقم الهاتف</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"tel:+966552018443\" class=\"text-warning\"><b>552018443 (966+)</b></a></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 1\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-letter mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; البريد الإلكتروني</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\"><b><b><a href=\"mailto:sdm13445@gmail.com\" class=\"text-warning\">sdm13445@gmail.com</a><br></b><a href=\"mailto:info@brightlook-company.com\" class=\"text-warning\">info@brightlook-company.com</a></b></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 2\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont mobi-mbri-globe mobi-mbri\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; العنوان</b></h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"https://goo.gl/maps/tLZ9HBwD7Rm8tzi89\" class=\"text-warning\"><b>رابغ حي صفا شارع مرور</b></a><br></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\" mbr-if=\"cardsAmount > 3\">\n                        <div class=\"image-wrapper\">\n                            <span mbr-icon class=\"mbr-iconfont socicon-whatsapp socicon\" style=\"color: rgb(204, 160, 0); fill: rgb(204, 160, 0);\"></span>\n                        </div>\n                        <div class=\"text-wrapper\">\n                            <h6 class=\"card-title mbr-fonts-style mb-1\" mbr-theme-style=\"display-5\" data-app-selector=\".card-title\" mbr-if=\"showCardTitle\">\n                                <b>&nbsp; واتساب</b>\n                            </h6>\n                            <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\"><a href=\"https://wa.me/966552018443\" class=\"text-warning text-primary\"><b>إبداء المحادثة</b></a></p>\n                        </div>\n                    </div>\n                    <div class=\"card-wrapper\">\n                        <div class=\"image-wrapper\">\n                            <img stype=\"width:70%\" src=\"@PROJECT_PATH@/assets/images/mbr-favicon.png\" alt>                            \n                        </div>\n                    </div>\n                </div>\n            </div>\n            <div class=\"map-wrapper col-12 col-md-6\">\n                <div class=\"google-map\" mbr-map=\"googleMap\">\n                </div>\n            </div>\n        </div>\n    </div>\n</section>",
           "_JSplaceholders": [],
           "_PHPplaceholders": [],
           "_anchor": "contact2-7n",
